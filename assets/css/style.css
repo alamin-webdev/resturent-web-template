@@ -64,10 +64,12 @@ li.nav-item.d-lg-none.d-sm-block.mt-3 a:hover{
     border: 5px solid white;
     width: 40px;
     height: 40px;
-    font-size: 32px;
+    font-size: 24px;
     border-radius: 50%;
     right: -19px;
     text-align: center;
+    padding-top: 2px;
+    
 }
 
 .slick-dots li{
