@@ -1,0 +1,12 @@
+/* for small device  */
+@media screen and (max-width: 576px){
+    .carousel_content .row{
+        flex-direction: column-reverse;
+    }
+    .plus_icon{
+        display: none;
+    }
+    .active::after{
+        
+    }
+}
