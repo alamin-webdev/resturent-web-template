@@ -6,7 +6,7 @@
     .plus_icon{
         display: none;
     }
-    .active::after{
-        
+    .my_navbar{
+        transform: unset;
     }
 }
