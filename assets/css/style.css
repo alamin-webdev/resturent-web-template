@@ -5,10 +5,10 @@
 :root{
     --primary-color: #FD3737;
     --secondary-color: #fff;
-    --primary-text-color: #2A2A2A;
+    --primary-text-color: #2B2B2B;
     --secondary-text-color: #fff;
     --body-bg-color: #efefef;
-    --section-bg-color: #fff;
+    --section-bg-color: #FFF5F5;
 }
 *{
     margin: 0;
@@ -18,11 +18,13 @@
 
 body{
     font-family: 'Oswald', sans-serif;
-    background-color: var(--body-bg-color);
+    /* background-color: var(--body-bg-color); */
 }
+/*------------------------------------ navbar style start------------------------------  */
 .nav_menu{
     color: var(--primary-text-color);
 }
+
 .navbar-toggler:focus{
     /* border-color: var(--primary-color); */
     box-shadow: 0 0 0 0.25rem var(--primary-color);
@@ -49,29 +51,36 @@ body{
 li.nav-item.d-lg-none.d-sm-block.mt-3 a:hover{
     color: white;
 }
-.bg_red{
+.nav_order_btn{
+    position: absolute;
     background: var(--primary-color);
-    width: 393px;
-    height: 35px;
-    position: absolute;
-    transform: translate(100%, 0);
+    width: 267px;
     border-radius: 50px 0 0 50px;
+    text-decoration: none;
+    right: 0;
 }
+.sticky-lg-top{
+    transition: 1s ease-in-out;
+}
+
+/*------------------------------------ navbar style end ------------------------------  */
+
+
+/*---------------------------- carousel style start ---------------------------------  */
 .plus_icon{
-    top: 17px;
+    top: -19px;
     position: absolute;
-    /* left: 483px; */
     border: 5px solid white;
     width: 40px;
     height: 40px;
     font-size: 24px;
     border-radius: 50%;
-    right: -19px;
+    right: -43px;
     text-align: center;
     padding-top: 2px;
+    padding-left: 1px;
     
 }
-
 .slick-dots li{
     background-color: var(--primary-text-color);
     border-radius: 50%;
@@ -86,4 +95,122 @@ li.nav-item.d-lg-none.d-sm-block.mt-3 a:hover{
 }
 .slick-dots li.slick-active button{
     background-color: var(--primary-color);
+}
+/*---------------------------- carousel style end ---------------------------------  */
+
+
+/*----------------------------- menu section style start ---------------------------  */
+.line{
+    width: 234px;
+    height: 1px;
+    background-color: black;
+}
+/*----------------------------- menu section style end ---------------------------  */
+
+/*----------------------------- contact section style start ---------------------------  */
+.underline{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+.contact_form input,select{
+    /* width: 300px !important; */
+    height: 60px;
+}
+.contact_form input::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.contact_form select option{
+    color: white;
+}
+.contact_form button{
+    height: 50px;
+}
+/*----------------------------- contact section style end ---------------------------  */
+
+
+/*----------------------------- popular dish section style start -------------------------  */
+.img_text h6{
+    background-color: #282828;
+}
+.img_text p{
+    background-color: var(--primary-color);
+    padding-top: 13px;
+}
+.img_text{
+    width: 248px;
+    position: absolute;
+    bottom: 28%;
+}
+/*----------------------------- popular dish section style end ---------------------------  */
+
+
+
+/*----------------------------- big footer section style start ----------------------*/
+#big_footer_section{
+    background-color: var(--primary-text-color);
+}
+.big_footer_line{
+    display: block;
+    width: 800px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+/*----------------------------- big footer section style end ---------------------------  */
+
+
+
+
+/*----------------------------- small footer section style start ----------------------*/
+#small_footer{
+    background-color: black;
+}
+/*----------------------------- small footer section style end ---------------------------  */
+
+
+/* .slick-prev:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: ">";
+    color: red;
+    font-size: 30px;
+  } */
+  .prev-arrow , .next-arrow{
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    position: absolute;
+    top: -34%;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    color: var(--primary-color);
+    opacity: 50%;
+  }
+  .next-arrow{
+    right: 2%;
+  }
+  .prev-arrow{
+    left: 2%;
+  }
+  .slick-arrow:focus{
+    background-color: var(--primary-color);
+    color: white;
+}
+  [type=button]:not(:disabled){
+    cursor: pointer;
+    opacity: 100%;
+    
+}
+button:focus:not(:focus-visible) {
+    outline: 0;
 }

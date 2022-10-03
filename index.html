@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,8 +27,10 @@
     <link rel="stylesheet" href="./assets/css/common.css">
     <title>Clev Pizza</title>
 </head>
+
 <body>
-    <section id="top_header" class="bg-danger">
+    <!-- top header section start  -->
+    <section id="top_header" style="background-color: var(--primary-color);">
         <div class="container">
             <div class="d-flex justify-content-between text-light">
                 <p class="mt-2">Mon-Fri 8:00 am - 8:00 pm</p>
@@ -35,158 +38,691 @@
             </div>
         </div>
     </section>
+    <!-- top header section end  -->
+
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg bg-light py-3 position-relative">
+    <nav class="navbar navbar-expand-lg bg-light py-3 sticky-lg-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo/logo.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="fa fa-bars text-danger"></span>
-          </button>
-          <div class="collapse justify-content-around navbar-collapse position-relative" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-5 mb-2 mb-lg-0 text-center my_navbar">
-              <li class="nav-item position-relative active navigation_menu">
-                <a class="nav-link nav_menu text-uppercase" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item navigation_menu position-relative">
-                <a class="nav-link nav_menu text-uppercase" href="#">menu</a>
-              </li>
-              <li class="nav-item position-relative navigation_menu">
-                <a class="nav-link nav_menu text-uppercase" href="#">items</a>
-              </li>
-              <li class="nav-item position-relative navigation_menu">
-                <a class="nav-link nav_menu text-uppercase" href="#">about</a>
-              </li>
-              <li class="nav-item position-relative navigation_menu">
-                <a class="nav-link nav_menu text-uppercase" href="#">contact</a>
-              </li>
-              <li class="nav-item d-lg-none d-sm-block mt-3">
-                <a href="" class="text-uppercase my_btn ">order now</a>
-              </li>
-            </ul>
-            <div class="position-absolute  z-index-1 d-lg-block d-sm-none left-71">
-                <a class="nav-link text-light text-uppercase " href="#">order now</a>
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="fa fa-bars text-danger"></span>
+            </button>
+            <div class="collapse justify-content-around navbar-collapse position-relative" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 text-center my_navbar">
+                    <li class="nav-item position-relative active navigation_menu">
+                        <a class="nav-link nav_menu text-uppercase" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item navigation_menu position-relative">
+                        <a class="nav-link nav_menu text-uppercase" href="#">menu</a>
+                    </li>
+                    <li class="nav-item position-relative navigation_menu">
+                        <a class="nav-link nav_menu text-uppercase" href="#">items</a>
+                    </li>
+                    <li class="nav-item position-relative navigation_menu">
+                        <a class="nav-link nav_menu text-uppercase" href="#">about</a>
+                    </li>
+                    <li class="nav-item position-relative navigation_menu">
+                        <a class="nav-link nav_menu text-uppercase" href="#">contact</a>
+                    </li>
+                    <li class="nav-item d-lg-none d-sm-block mt-3">
+                        <a href="" class="text-uppercase my_btn ">order now</a>
+                    </li>
+
+                </ul>
+                
             </div>
-            <span class="bg_red d-none d-lg-block"></span>              
-          </div>
         </div>
-      </nav>
+            <a class="nav-link nav_order_btn text-light d-none d-lg-block text-uppercase " href="#">order now</a>
+    </nav>
     <!-- navbar end -->
 
-<!-- header start  -->
-<header class="py-5">
-    <!-- header carousel start  -->
-    <div class="container myslider">
-        <!-- single carousel start  -->
-        <div class="carousel_content">
-            <div class="row">
-                <div class="col-md-6  align-self-center">
-                    <h1 class="text-danger">4” BBQ Pizza</h1>
-                    <p class="letter_spacing text_primary">WITH EXTRA CHEESE</p>
-                    <div class="position-relative d-flex align-items-end bg-danger text-light rounded-4">
-                        <ul class="d-flex">
-                            <li class="me-5">Chesse</li>
-                            <li class="me-5">Mushroom</li>
-                            <li class="me-5">BBQ</li>
-                            <li class="me-5">Hot</li>
-                        </ul>
-                        <h1> $99 <sub class="fs-6 fw-lighter">Only</sub></h1>
-                        <i class="fa fa-plus plus_icon bg-danger" aria-hidden="true"></i>
+    <!-- header start  -->
+    <header class="py-5 bg-light">
+        <!--  carousel start  -->
+        <div class="container myslider">
+            <!-- single carousel start  -->
+            <div class="carousel_content ">
+                <div class="row p-2">
+                    <div class="col-md-6 flex-md-column-reverse align-self-center text-center text-md-start py-3">
+                        <h1 class="text-danger">4” BBQ Pizza</h1>
+                        <p class="letter_spacing text_primary">WITH EXTRA CHEESE</p>
+                        <div class="position-relative d-flex bg_primary text-light rounded-4">
+                            <ul class="d-flex align-items-center p-4 mb-0 justify-content-between w-100">
+                                <li class="">Cheese</li>
+                                <li class="">Mushroom</li>
+                                <li class="">BBQ</li>
+                                <li class="">Hot</li>
+                                <li class="list-unstyled fs-40 fw-bold ">$99 <sub class="fs-6 fw-lighter">Only</sub></li>
+                                <li class="list-unstyled position-relative"><i class="fa fa-plus plus_icon bg_primary" aria-hidden="true"></i></li>
+                            </ul>
+                            <!-- <i class="fa fa-plus plus_icon  bg-danger" aria-hidden="true"></i> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/images/image1.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/images/image1.png" class="img-fluid" alt="">
-                </div>
             </div>
-        </div>
-        <!-- single carousel end  -->
+            <!-- single carousel end  -->
 
-
-        <!-- single carousel start  -->
-        <div class="carousel_content">
-            <div class="row">
-                <div class="col-md-6 flex-md-column-reverse align-self-center">
-                    <h1 class="text-danger">4” BBQ Pizza</h1>
-                    <p class="letter_spacing text_primary">WITH EXTRA CHEESE</p>
-                    <div class="position-relative d-flex align-items-end bg-danger text-light rounded-4">
-                        <ul class="d-flex">
-                            <li class="me-5">Chesse</li>
-                            <li class="me-5">Mushroom</li>
-                            <li class="me-5">BBQ</li>
-                            <li class="me-5">Hot</li>
-                        </ul>
-                        <h1> $99 <sub class="fs-6 fw-lighter">Only</sub></h1>
-                        <i class="fa fa-plus plus_icon bg-danger" aria-hidden="true"></i>
+            <!-- single carousel start  -->
+            <div class="carousel_content">
+                <div class="row p-2">
+                    <div class="col-md-6 flex-md-column-reverse align-self-center text-center text-md-start py-3">
+                        <h1 class="text-danger">4” BBQ Pizza</h1>
+                        <p class="letter_spacing text_primary">WITH EXTRA CHEESE</p>
+                        <div class="position-relative d-flex bg_primary text-light rounded-4">
+                            <ul class="d-flex align-items-center p-4 mb-0 justify-content-between w-100">
+                                <li class="">Cheese</li>
+                                <li class="">Mushroom</li>
+                                <li class="">BBQ</li>
+                                <li class="">Hot</li>
+                                <li class="list-unstyled fs-40 fw-bold ">$99 <sub class="fs-6 fw-lighter">Only</sub></li>
+                                <li class="list-unstyled position-relative"><i class="fa fa-plus plus_icon bg_primary" aria-hidden="true"></i></li>
+                            </ul>
+                            <!-- <i class="fa fa-plus plus_icon bg-danger" aria-hidden="true"></i> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/images/image2.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/images/image1.png" class="img-fluid" alt="">
-                </div>
             </div>
-        </div>
-        <!-- single carousel end  -->
+            <!-- single carousel end  -->
 
-        <!-- single carousel start  -->
-        <div class="carousel_content">
-            <div class="row">
-                <div class="col-md-6 align-self-center">
-                    <h1 class="text-danger">4” BBQ Pizza</h1>
-                    <p class="letter_spacing text_primary">WITH EXTRA CHEESE</p>
-                    <div class="position-relative d-flex align-items-end bg-danger text-light rounded-4">
-                        <ul class="d-flex">
-                            <li class="me-5">Chesse</li>
-                            <li class="me-5">Mushroom</li>
-                            <li class="me-5">BBQ</li>
-                            <li class="me-5">Hot</li>
-                        </ul>
-                        <h1> $99 <sub class="fs-6 fw-lighter">Only</sub></h1>
-                        <i class="fa fa-plus plus_icon bg-danger" aria-hidden="true"></i>
+
+            <!-- single carousel start  -->
+            <div class="carousel_content">
+                <div class="row p-2">
+                    <div class="col-md-6 flex-md-column-reverse align-self-center text-center text-md-start py-3">
+                        <h1 class="text-danger">4” BBQ Pizza</h1>
+                        <p class="letter_spacing text_primary">WITH EXTRA CHEESE</p>
+                        <div class="position-relative d-flex bg_primary text-light rounded-4">
+                            <ul class="d-flex align-items-center p-4 mb-0 justify-content-between w-100">
+                                <li class="">Cheese</li>
+                                <li class="">Mushroom</li>
+                                <li class="">BBQ</li>
+                                <li class="">Hot</li>
+                                <li class="list-unstyled fs-40 fw-bold ">$99 <sub class="fs-6 fw-lighter">Only</sub></li>
+                                <li class="list-unstyled position-relative"><i class="fa fa-plus plus_icon bg_primary" aria-hidden="true"></i></li>
+                            </ul>
+                            <!-- <h1 class="mb-0 align-self-center"> $99 <sub class="fs-6 fw-lighter">Only</sub></h1> -->
+                            <!-- <i class="fa fa-plus plus_icon bg-danger" aria-hidden="true"></i> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/images/pizza1.jpg" class="img-fluid rounded-circle img-thumbnail" alt="">
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="./assets/images/image1.png" class="img-fluid" alt="">
+            </div>
+            <!-- single carousel end  -->
+        </div>
+        <!--  carousel end  -->
+    </header>
+    <!-- header end  -->
+
+
+    <!-- main content start  -->
+    <main>
+
+        <!-- about section start  -->
+        <section class="section_bg mb_67" id="about_section">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="./assets/images/image2.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-5 align-self-center text-center text-md-start">
+                        <p class="letter_spacing text_red_primary">About clevpizza</p>
+                        <h2 class="fs-50 fw-bold text_primary" style="padding-bottom: 29px;">Serving Pizzas By The <br>
+                            Slice Since 2001 </h2>
+                        <p class="fs-16 mb_67 text-start">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry.<br><br>Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s. </p>
+                        <a href="" class="text-uppercase my_btn mb_67">contact us</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- single carousel end  -->
-        
-      </div>
-    <!-- header carousel end  -->
-</header>
-<!-- header end  -->
+        </section>
+        <!-- about section end  -->
 
-
-<!-- main content start  -->
-<main>
-    <section class="py-5 section_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="./assets/images/image2.png" class="img-fluid" alt="">
+        <!-- pizza menu section start  -->
+        <section id="pizze_menu_section " class="mb_67">
+            <div class="container py-5">
+                <div class="row mb_67">
+                    <div class="col-md-8 mx-auto text-center">
+                        <p class="menu_title fs-50 fw-bold text-center text-uppercase text_primary"><span
+                                class="text_red_primary">pizza</span> menu</p>
+                        <p class="fs-16 text_primary ">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took.</p>
+                    </div>
                 </div>
-                <div class="col-md-6 align-self-center">
-                    <p class="letter_spacing text_red_primary">About clevpizza</p>
-                    <h2>Serving Pizzas By The <br> Since 2001</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
-                    <a href="" class="text-uppercase my_btn ">contact us</a>
+                <div class="row">
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">specialty pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">specialty pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">BBQ pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">BBQ pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">Vegetable pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">Vegetable pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">Spicy pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
+                    <div class="col-md-6 mb_47 pe-5">
+                        <div class="d-flex justify-content-between">
+                            <p class="menu_name text-capitalize fs-20 fw-bold text_primary">Spicy pizza </p>
+                            <span class="line mt-3"></span>
+                            <p class="menu_price fs-20 text_red_primary fw-bold">5.99$</p>
+                        </div>
+                        <p class="col-md-10 fs-16 text_primary menu_detail">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
-<!-- main content end  -->
+        </section>
+        <!-- pizza menu section end  -->
 
-<!-- jquery       -->
-<script src="./assets/js/jquery.min.js"></script>
+        <!-- booking section start  -->
+        <section id="booking_section" class="mb_67 section_bg">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4 text-center text-md-start">
+                        <p class="text-uppercase text_red_primary fs-20 fw-bold">fresh from pizza</p>
+                        <p class="fs-50 fw-bold text_primary text-uppercase">BOOK online</p>
+                        <p class="fs-16 text_primary">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <p class="fs-20 fw-bold"><i class="fa-solid fa-square-phone"></i> +123456789</p>
+                    </div>
+                    <div class="col-md-7 mx-auto">
+                        <div class="text-center mb_34">
+                            <p class="form_title fw-bold fs-20 text_primary text-uppercase mb-1"><span
+                                    class="text_red_primary">book a</span> table</p>
+                            <span class="underline"></span>
+                        </div>
+                        <!-- contact form start  -->
+                        <form action="" class="contact_form">
+                            <div class="row">
+                                <div class="col-md-6 mb_34">
+                                    <input type="text" name="name" class="form-control bg_primary fs-16"
+                                        placeholder="Name">
+                                </div>
+                                <div class="col-md-6 mb_34">
+                                    <input type="email" name="email" class="form-control bg_primary fs-16"
+                                        placeholder="Email">
+                                </div>
+                                <div class="col-md-6 mb_34">
+                                    <select class="form-select bg_primary form-select-lg mb-3 text-light fs-16"
+                                        aria-label=".form-select-lg example">
+                                        <option class="font-light">Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
 
-<!-- slick js  -->
-<script src="./assets/js/slick.min.js"></script>
+                                </div>
+                                <div class="col-md-6 mb_34">
+                                    <input type="" name="date" class="form-control bg_primary fs-16"
+                                        placeholder="Date & Time">
+                                </div>
 
-<!-- bootstrap js -->
-<script src="./assets/js/bootstrap.bundle.js"></script>
+                                <div class="col-md-12">
+                                    <button class="my_btn_2 text-uppercase w-100  text-center">Book
+                                        now</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- contact form end  -->
 
-<!-- script js  -->
-<script src="./assets/js/script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- booking section end  -->
+
+        <!-- popular dish section start  -->
+        <section id="popular_dish_section" class="mb_67">
+            <div class="container py-5">
+                <div class="row pb_94">
+                    <div class="col-md-8 mx-auto text-center">
+                        <p class="fs-20 fw-bold text-center text-uppercase text_red_primary mb-1">Most popular dishes
+                        </p>
+                        <span class="underline mb-3"></span>
+                        <p class="fs-16 text_primary mb_34">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                            an unknown printer took.</p>
+                        <a href="#" class=" btn my_btn text-uppercase">full menu</a>
+                    </div>
+                </div>
+                <!-- popular dish carousel start  -->
+                <div class=" popular_dish_carousel">
+                    <!-- single carousel start  -->
+                    <div class="card p-3 mb-5   border-0" style="width: 18rem;">
+                        <img src="./assets/images/popular_dish/product-item.png"
+                            class="card-img-top position-relative" alt="...">
+                        <div class="card-body p-0">
+
+                            <p class="m-0 py-2 fs-16 text_primary">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <div class="text_red_primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+
+                    <!-- single carousel start  -->
+                    <div class="card p-3  border-0" style="width: 18rem;">
+                        <img src="./assets/images/popular_dish/product-item2.png"
+                            class="card-img-top position-relative" alt="...">
+                        
+                        <div class="card-body p-0">
+
+                            <p class="m-0 py-2 fs-16 text_primary">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <div class="text_red_primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+
+                    <!-- single carousel start  -->
+                    <div class="card p-3  border-0" style="width: 18rem;">
+                        <img src="./assets/images/popular_dish/product-item3.png"
+                            class="card-img-top position-relative" alt="...">
+                        
+                        <div class="card-body p-0">
+
+                            <p class="m-0 py-2 fs-16 text_primary">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <div class="text_red_primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+
+                    <!-- single carousel start  -->
+                    <div class="card p-3  border-0" style="width: 18rem;">
+                        <img src="./assets/images/popular_dish/product-item4.png"
+                            class="card-img-top position-relative" alt="...">
+                        
+                        <div class="card-body p-0">
+
+                            <p class="m-0 py-2 fs-16 text_primary">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <div class="text_red_primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+
+                    <!-- single carousel start  -->
+                    <div class="card p-3  border-0" style="width: 18rem;">
+                        <img src="./assets/images/popular_dish/product-item4.png"
+                            class="card-img-top position-relative" alt="...">
+                        
+                        <div class="card-body p-0">
+
+                            <p class="m-0 py-2 fs-16 text_primary">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <div class="text_red_primary">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+                </div>
+                <!-- popular dish carousel end  -->
+            </div>
+        </section>
+        <!-- popular dish section end  -->
+
+
+        <!-- client section start  -->
+        <section id="client_section" class="mb_67 section_bg">
+            <div class="container py-5">
+                <p class="fs-20 fw-bold text-center text-uppercase text_red_primary mb-1">What clint's says</p>
+                <span class="underline"></span>
+
+                <!-- client carousel start  -->
+                <div class="client_carousel">
+                    <!-- single carousel start  -->
+                    <div class="card m-3 border-0 shadow-sm" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="align-items-center d-flex justify-content-evenly sm-client-view">
+                                <div class="text_red_primary fs-12 d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <img class="d-none d-lg-block" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="d-none d-lg-block">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+
+
+                                <img class=" client-sm-card" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="text_red_primary fs-12 client-sm-card ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class=" client-sm-card">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <p class="px-3 text-center text-muted fw-light fs-14 pt-3">“Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+                    <!-- single carousel start  -->
+                    <div class="card m-3 border-0 shadow-sm" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="align-items-center d-flex justify-content-evenly sm-client-view">
+                                <div class="text_red_primary fs-12 d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <img class="d-none d-lg-block" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="d-none d-lg-block">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+
+
+                                <img class=" client-sm-card" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="text_red_primary fs-12 client-sm-card ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class=" client-sm-card">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <p class="px-3 text-center text-muted fw-light fs-14 pt-3">“Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+                    <!-- single carousel start  -->
+                    <div class="card m-3 border-0 shadow-sm" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="align-items-center d-flex justify-content-evenly sm-client-view">
+                                <div class="text_red_primary fs-12 d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <img class="d-none d-lg-block" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="d-none d-lg-block">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+
+
+                                <img class=" client-sm-card" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="text_red_primary fs-12 client-sm-card ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class=" client-sm-card">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <p class="px-3 text-center text-muted fw-light fs-14 pt-3">“Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+                    <!-- single carousel start  -->
+                    <div class="card m-3 border-0 shadow-sm" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="align-items-center d-flex justify-content-evenly sm-client-view">
+                                <div class="text_red_primary fs-12 d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <img class="d-none d-lg-block" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="d-none d-lg-block">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+
+
+                                <img class=" client-sm-card" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="text_red_primary fs-12 client-sm-card ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class=" client-sm-card">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <p class="px-3 text-center text-muted fw-light fs-14 pt-3">“Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+                    <!-- single carousel start  -->
+                    <div class="card m-3 border-0 shadow-sm" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="align-items-center d-flex justify-content-evenly sm-client-view">
+                                <div class="text_red_primary fs-12 d-none d-lg-block">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <img class="d-none d-lg-block" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="d-none d-lg-block">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+
+
+                                <img class=" client-sm-card" src="./assets/images/clients-images/client1.png" alt="">
+                                <div class="text_red_primary fs-12 client-sm-card ">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class=" client-sm-card">
+                                    <p class="fs-14 fw-bold m-0 text_red_primary">Olive James</p>
+                                    <p class="fs-8 text_primary m-0">Grapics Designer</p>
+                                </div>
+                                
+                                
+                            </div>
+                            <p class="px-3 text-center text-muted fw-light fs-14 pt-3">“Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.”</p>
+                        </div>
+                    </div>
+                    <!-- single carousel end  -->
+                    <!-- <div class="priv_arrow">
+                        <button type="button" class="prev"><i class="fa-solid fa-circle-arrow-right"></i></button>
+                    </div> -->
+                </div>
+                <!-- client carousel end  -->
+            </div>
+        </section>
+        <!-- client section end  -->
+
+    </main>
+    <!-- main content end  -->
+
+    <!-- footer content start  -->
+    <footer>
+        <!-- big footer section start  -->
+        <section id="big_footer_section">
+            <div class="container py-5">
+                <div class="text-center d-flex">
+                    <span class="big_footer_line mt-4"></span>
+                    <img src="assets/images/logo/footer_logo.png" class="img-fluid big_footer_logo mb-5 position-relative" alt="">
+                    <span class="big_footer_line mt-4"></span>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-5 mb-md-1 text-light text-center">
+                        <p class="text-uppercase fs-16 fw-bold">address</p>
+                        <p class="fs-14 text-capitalize">House: 44, Dhanmondi, Dhaka ,<br> 
+                            Bangladesh.</p>
+                            <i class="fa-brands fa-facebook px-1"></i>
+                            <i class="fa-brands fa-instagram px-1"></i>
+                            <i class="fa-brands fa-twitter px-1"></i>
+                            <i class="fa-brands fa-youtube px-1"></i>
+                            <i class="fa-brands fa-linkedin-in px-1"></i>
+
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-1 text-light text-center">
+                        <p class="text-uppercase fs-16 fw-bold">opening hour</p>
+                        <p class="fs-14 text-capitalize">everyday 8:00 AM - 12 -00 PM</p>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-1 text-light text-center">
+                        <p class="text-uppercase fs-16 fw-bold">book a table</p>
+                        <p class="fs-14 text-capitalize"><i class="fa-solid fa-square-phone pe-1"></i> +123456789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="small_footer">
+            <div class="container p-2 p-md-4">
+                <div class="d-sm-block d-md-flex text-center text-md-start small_footer_text justify-content-around text-light" >
+                    <p class="fs-14 fw-bold text-uppercase m-2 m-md-0 align-self-center">Copyright© 2022 - All Right reserved</p>
+                    <p class="fs-14 fw-bold text-uppercase m-2 m-md-0 align-self-center">website DESIGNED by - ClevPro</p>
+                </div>
+            </div>
+        </section>
+        <!-- big footer section end  -->
+    </footer>
+    <!-- footer content end  -->
+
+    <!-- jquery       -->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- slick js  -->
+    <script src="./assets/js/slick.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+
+    <!-- script js  -->
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

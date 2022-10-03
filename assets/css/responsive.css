@@ -1,12 +1,136 @@
 /* for small device  */
 @media screen and (max-width: 576px){
+    
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
     .carousel_content .row{
         flex-direction: column-reverse;
     }
     .plus_icon{
-        display: none;
+        right: -28px;
     }
     .my_navbar{
         transform: unset;
+    }
+    ul.d-flex.align-items-center.p-4.mb-0.justify-content-between.w-100 {
+        padding: 16px !important;
+    }
+    ul.d-flex.align-items-center.p-4.mb-0.justify-content-between.w-100 li{
+        list-style: none;
+    }
+    li.list-unstyled.fs-40.fw-bold {
+        padding: 12px;
+        font-size: 30px;
+    }
+    sub.fs-6.fw-lighter{
+        font-size: 14px !important;
+    }
+
+    /* header carousel responsive css  */
+    .slick-dots{
+        position: unset !important;
+    }
+    /* about section responsive css  */
+    h2.fs-50.fw-bold.text_primary {
+        font-size: 41px;
+    }
+
+    /* menu section responsive css  */
+    .menu_price{
+        padding-left: 15px;
+    }
+    .menu_detail{
+        font-size: 14px !important;
+    }
+    .line{
+        width: 100px;
+    }
+    #pizze_menu_section{
+        margin-bottom: unset;
+    }
+
+    /* popular dish section responsive css  */
+    .prev-arrow , .next-arrow{
+        top: unset;
+        bottom: 0;
+    }
+
+    /* client section  */
+    .sm-client-view{
+        flex-direction: column ;
+        text-align: center;
+
+    }
+    
+
+    /* small footer responsive css  */
+    .small_footer_text p{
+        font-weight: 300 !important;
+        font-size: 10px !important;
+    }
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    ul.d-flex.align-items-center.p-4.mb-0.justify-content-between.w-100 li{
+        list-style: none;
+    }
+    .my_navbar{
+        transform: unset;
+    }
+    .sm-client-view{
+        flex-direction: column ;
+        text-align: center;
+
+    }
+    /* .client-sm-card{
+        display: none !important;
+    } */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px){
+    
+   /* about section  */
+   h2.fs-50.fw-bold.text_primary{
+    font-size: 26px;
+    padding-bottom: 10px !important;
+   }
+   p.fs-16.mb_67.text-start{
+    font-size: 14px;
+   }
+
+   /* popular section  */
+   p.m-0.py-2.fs-16.text_primary{
+    font-size: 14px;
+   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px){
+    .client-sm-card{
+        display: none !important;
+    }
+    .my_navbar{
+        padding-right: 11px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .client-sm-card{
+        display: none !important;
+    }
+    
+}
+
+@media only screen and (min-width: 1450px){
+    .nav_order_btn{
+        width: 823px !important;
     }
 }
