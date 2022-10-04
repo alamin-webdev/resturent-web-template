@@ -5,7 +5,7 @@
       speed: 300,
       slidesToShow: 1,
         dots:true,
-        autoplay:true,
+        // autoplay:true,
         arrows: false,
         responsive: [
           {
